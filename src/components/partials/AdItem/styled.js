@@ -1,8 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-
-export const Item=styled.div`
-    a{
+export const Item = styled.div`
+    a {
         display: block;
         border: ipx solid #ccc;
         margin: 10px;
@@ -13,19 +12,18 @@ export const Item=styled.div`
         background-color: #fff;
         transition: all ease 0.2s;
 
-        &:hover{
+        &:hover {
             background-color: #d9ffcc;
-            border: 1px solid #b3ff99;          
+            border: 1px solid #b3ff99;
         }
 
-        .itemImage{
+        .itemImage {
             width: 100%;
             border-radius: 5px;
         }
 
-        .itemName{
+        .itemName {
             font-weight: bold;
         }
     }
-
 `
