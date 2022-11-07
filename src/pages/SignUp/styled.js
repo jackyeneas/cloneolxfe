@@ -1,22 +1,18 @@
-import styled from "styled-components"
-
-
+import styled from 'styled-components'
 
 export const PageArea = styled.div`
     form {
         background-color: #FFF;
-        border-radius: 3px;
+        border-radius: 5px;
         padding: 10px;
         box-shadow: 0px 0px 3px #999;
         margin-bottom: 20px;
-        
-   
+
         .area {
             display: flex;
             align-items: center;
             padding: 10px;
             max-width: 500px;
-
 
             .area--title {
                 width: 200px;
@@ -42,7 +38,7 @@ export const PageArea = styled.div`
                         color: #333;
                     }
                 }
-            
+
                 button {
                     background-color: #0089FF;
                     border: 0;
@@ -58,6 +54,6 @@ export const PageArea = styled.div`
                     }
                 }
             }
-        } 
+        }
     }
-`
+`  
