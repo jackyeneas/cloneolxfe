@@ -1,8 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const NotFoundArea = styled.div`
 background-color: #999;
-
 
 .conteudo {
     display: flex;
@@ -16,7 +15,6 @@ background-color: #999;
         margin-top: 300px;
         margin-right: 30px;
         margin-left: auto;
-
 
         a {
             text-decoration: none;
@@ -32,6 +30,7 @@ background-color: #999;
                 border: 1px solid #BA55D3;
             }
         }
+
     }
 }
 

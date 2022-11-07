@@ -1,20 +1,17 @@
-import React from "react";
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { NotFoundArea } from './styled'
-import { PageContainer, PageTitle } from "../../components/MainComponents";
+import { NotFoundArea} from './styled'
+import { PageContainer, PageTitle } from '../../components/MainComponents'
 
 const Page = () => {
-
     return (
         <NotFoundArea>
             <PageContainer>
                 <div className="conteudo">
-                <PageTitle>
-                    Página não encontrada!
-                </PageTitle>
-                <div className="botao">
-                    <Link to="/">Voltar para Home</Link>
-                </div>
+                    <PageTitle>Página não encontrada</PageTitle>
+                    <div className="botao">
+                        <Link to="/">Voltar para a Home</Link>
+                    </div>
                 </div>
             </PageContainer>
         </NotFoundArea>
@@ -22,4 +19,3 @@ const Page = () => {
 }
 
 export default Page
-
