@@ -1,22 +1,20 @@
-import styled from "styled-components"
-
-
+import styled from 'styled-components'
 
 export const PageArea = styled.div`
-    h2{
+    h2 {
         font-size: 20px;
     }
 
-    .list{
+    .list {
         display: flex;
         flex-wrap: wrap;
 
-        .adItem{
+        .aditem {
             width: 25%;
         }
     }
 
-    .seeAllLink{
+    .seeAllLink {
         color: #000;
         text-decoration: none;
         font-weight: bold;
@@ -24,19 +22,20 @@ export const PageArea = styled.div`
         margin-top: 10px;
     }
 `
+
 export const SearchArea = styled.div`
-    background-color: #DDD;
-    border-bottom: 1px solid #CCC;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
     padding: 20px 0;
 
-    .searchBox{
+    .searchBox {
         background-color: #9bb83c;
         padding: 20px 15px;
         border-radius: 5px;
-        box-shadow: 1px 1px 1px 0.3px rgba(0,0,0,0.2);
+        box-shadow: 1px 1px 1px 0.3px rgba(0, 0, 0, 0.2);
         display: flex;
 
-        form{
+        form {
             flex: 1%;
             display: flex;
 
@@ -49,16 +48,17 @@ export const SearchArea = styled.div`
                 color: #000;
                 margin-right: 20px;
             }
-            input{
+
+            input {
                 flex: 1;
                 padding: 0 10px;
             }
-            
-            select{
+
+            select {
                 width: 100px;
             }
 
-            button{
+            button {
                 background-color: #49aeef;
                 font-size: 15px;
                 border: 0;
@@ -68,37 +68,37 @@ export const SearchArea = styled.div`
                 padding: 0 20px;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     background-color: #429fdb;
                 }
             }
         }
     }
 
-.categoryList{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-
-    .categoryItem{
-        width: 25%;
+    .categoryList {
         display: flex;
-        align-items: center;
-        color: #000;
-        text-decoration: none;
-        height: 50px;
-        margin-bottom: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
 
-        &:hover{
-            color: #999;
-        }
+        .categoryItem {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            color: #000;
+            text-decoration: none;
+            height: 50px;
+            margin-bottom: 10px;
 
-        img{
-            width: 40px;
-            height: 45px;
-            margin-right: 10px;
+            &:hover {
+                color: #999;
+            }
+
+            img {
+                width: 40px;
+                height: 45px;
+                margin-right: 10px;
+            }
         }
     }
-}
 
 `
