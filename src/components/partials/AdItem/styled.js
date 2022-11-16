@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Item = styled.div`
     a {
         display: block;
-        border: ipx solid #ccc;
+        border: 1px solid #ccc;
         margin: 10px;
         text-decoration: none;
         padding: 10px;
@@ -18,7 +18,7 @@ export const Item = styled.div`
         }
 
         .itemImage {
-            width: 100%;
+            width:  100%;
             border-radius: 5px;
         }
 
