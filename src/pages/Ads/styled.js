@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const PageArea = styled.div`
-    display: flex;
-    margin-top: 20px;
+   display: flex;
+   margin-top: 20px;
 
     .leftSide {
         width: 250px;
@@ -25,7 +25,7 @@ export const PageArea = styled.div`
 
         ul, li {
             margin: 0;
-            padding: 0;
+            padding:0;
             list-style: none;
         }
 
@@ -53,31 +53,33 @@ export const PageArea = styled.div`
             background-color: #9bb83c;
             color: #fff;
         }
+        
     }
 
     .rightSide {
         flex: 1;
-        h2 {
-            margin-top: 0;
+
+        h2{
+            margin-top: 0%;
             font-size: 18px;
         }
 
-        .ListWarning {
+        .listWarning {
             padding: 30px;
             text-align: center;
         }
 
-        .pagination {
+        .pagination{
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            margin: 10px 0;
+            margin: 10px;
             flex-wrap: wrap;
-
+            
             .pagItem {
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
                 display: flex;
                 border: 1px solid #000;
                 align-items: center;
@@ -95,13 +97,13 @@ export const PageArea = styled.div`
             }
         }
 
-        .list {
+        .list{
             display: flex;
             flex-wrap: wrap;
 
-            .aditem {
+            .adItem{
                 width: 33%;
             }
         }
     }
-`
+`;
