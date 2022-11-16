@@ -2,7 +2,8 @@ import
     React, 
     { 
         useState, 
-        useEffect 
+        useEffect, 
+        useRef
     } from 'react';
 import MaskedInput from 'react-text-mask';
 import { createNumberMask } from 'text-mask-addons';
@@ -13,10 +14,11 @@ import {
     ErrorMessage 
 } from '../../components/MainComponents';
 import useApi from '../../helpers/OlxAPI';
+import { useHistory } from 'react-router-dom';
 
 const Page = () => {
     const api = useApi();
-
+    const history = useHistory();
     const [title, setTitle] = useState('');
     const [category, setCategory] = useState('');
     const [categories, setCategories] = useState([]);
@@ -25,6 +27,7 @@ const Page = () => {
     const [description, setDescription] = useState('');
     const [disabled, setDisabled] = useState(false);
     const [error, setError] = useState('');
+    const fileField = useRef(null);
 
     useEffect(() => {
         const getCategories = async () => {
@@ -54,7 +57,7 @@ const Page = () => {
             fData.append("cat", category);
             if(fileField.current.files.length > 0) {
                 for(let i = 0; i < fileField.current.files.length; i++) {
-                    fData.append("img", fileFiled.current.files[i]);
+                    fData.append("img", fileField.current.files[i]);
                 }
             }
             const response = await api.addAd(fData);
