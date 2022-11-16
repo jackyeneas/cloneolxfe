@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const PageArea = styled.div`
     h2 {
@@ -9,7 +9,7 @@ export const PageArea = styled.div`
         display: flex;
         flex-wrap: wrap;
 
-        .aditem {
+        .adItem {
             width: 25%;
         }
     }
@@ -19,9 +19,9 @@ export const PageArea = styled.div`
         text-decoration: none;
         font-weight: bold;
         display: inline-block;
-        margin-top: 10px;
+        margin-top:  10px;
     }
-`
+`;
 
 export const SearchArea = styled.div`
     background-color: #ddd;
@@ -29,10 +29,10 @@ export const SearchArea = styled.div`
     padding: 20px 0;
 
     .searchBox {
-        background-color: #9bb83c;
+        background-color:  #9bb83c;
         padding: 20px 15px;
         border-radius: 5px;
-        box-shadow: 1px 1px 1px 0.3px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 1px 0.3px rgba(0,0,0,0.2);
         display: flex;
 
         form {
@@ -55,7 +55,7 @@ export const SearchArea = styled.div`
             }
 
             select {
-                width: 100px;
+                width:  100px;
             }
 
             button {
@@ -67,15 +67,16 @@ export const SearchArea = styled.div`
                 height: 40px;
                 padding: 0 20px;
                 cursor: pointer;
+                box-shadow: 1px 1px 1px 0.3px rgba(0,0,0,0.2);
 
-                &:hover {
+                &:hover{
                     background-color: #429fdb;
                 }
             }
         }
     }
 
-    .categoryList {
+    .categoryList{
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
@@ -87,7 +88,7 @@ export const SearchArea = styled.div`
             color: #000;
             text-decoration: none;
             height: 50px;
-            margin-bottom: 10px;
+            margin-bottom:  10px;
 
             &:hover {
                 color: #999;
@@ -99,6 +100,7 @@ export const SearchArea = styled.div`
                 margin-right: 10px;
             }
         }
-    }
 
-`
+    }
+    
+`;
